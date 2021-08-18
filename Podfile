@@ -8,5 +8,5 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'FringeLogo' do  
-  pod 'DeviceKit', '4.4.0'
+  pod 'EFFoundation/Complete', '1.4.11'
 end

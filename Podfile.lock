@@ -1,16 +1,39 @@
 PODS:
   - DeviceKit (4.4.0)
+  - EFFoundation/Attributes (1.4.11):
+    - EFFoundation/Core
+    - SwiftyAttributes (>= 5.1.1)
+  - EFFoundation/Complete (1.4.11):
+    - EFFoundation/Attributes
+    - EFFoundation/Core
+    - EFFoundation/Device
+    - EFFoundation/Reachability
+  - EFFoundation/Core (1.4.11)
+  - EFFoundation/Device (1.4.11):
+    - DeviceKit (>= 4.2.1)
+    - EFFoundation/Core
+  - EFFoundation/Reachability (1.4.11):
+    - EFFoundation/Core
+    - ReachabilitySwift (~> 5.0.0)
+  - ReachabilitySwift (5.0.0)
+  - SwiftyAttributes (5.1.1)
 
 DEPENDENCIES:
-  - DeviceKit (= 4.4.0)
+  - EFFoundation/Complete (= 1.4.11)
 
 SPEC REPOS:
   trunk:
     - DeviceKit
+    - EFFoundation
+    - ReachabilitySwift
+    - SwiftyAttributes
 
 SPEC CHECKSUMS:
   DeviceKit: 2c5d7485a2fa10b65c0091b2952d30843a6ba06d
+  EFFoundation: 950f99ddbc81c6cbbf6a375dbff500b3eef95bf4
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
 
-PODFILE CHECKSUM: 60d90272332df41e55b88116a49f15e393b53751
+PODFILE CHECKSUM: 02af77328dcadc66b6991d903ea3d71c549e28fa
 
 COCOAPODS: 1.10.1
