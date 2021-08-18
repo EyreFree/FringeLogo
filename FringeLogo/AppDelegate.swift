@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
         
+        // 添加 Logo
         if (UIDevice.isiPhoneXSeries) {
             let labelSize: CGSize = CGSize(width: 50, height: 20)
             let label: UILabel = UILabel(frame:
@@ -48,12 +49,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
+        // 隐藏 Logo
         if let label = self.window?.viewWithTag(2333) {
             label.isHidden = true
         }
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
+        // 显示 logo
         if let label = self.window?.viewWithTag(2333) {
             label.isHidden = false
         }
